@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AOS動畫</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">JS套件說明</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="aos.html">AOS動畫</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="tts.html">文字轉語音</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="lottie.html">Lottie動畫</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="chartjs.html">chart.js動畫</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="lazyload.html">圖片惰性加載</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="typed.html">Typed.js動畫</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="anime.html">Anime.js動畫</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="moment.html">Moment.js動態時間</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="leaflet.html">leaflet.js地圖</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="jquery.html">JQuery UI</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <h2>AOS動畫效果</h2>
+        <a href="https://michalsnik.github.io/aos/">AOS官網</a>
+        <p></p>
+
+        <h2>記得在head和body中引入：</h2>
+
+        <pre style="font-size: large; background-color:blanchedalmond;">
+          <code>
+            &lt;link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /&gt;
+            &lt;script src="https://unpkg.com/aos@next/dist/aos.js"&gt;&lt;/script&gt;</code>
+        </pre>
+
+        <h2>範例程式碼: data-aos="動畫效果"</h2>
+        <div style="font-size: large;">
+          <pre style="background-color:blanchedalmond">
+            <code>
+              &lt;div data-aos="fade-up"&gt;Fade-Up&lt;/div&gt;
+              &lt;div data-aos="fade-down"&gt;Fade-Down&lt;/div&gt;
+              &lt;div data-aos="fade-left"&gt;Fade-Left&lt;/div&gt;
+              &lt;div data-aos="fade-right"&gt;Fade-Right&lt;/div&gt;
+              &lt;div data-aos="zoom-in"&gt;Zoom-In&lt;/div&gt;
+              &lt;div data-aos="zoom-out"&gt;Zoom-out&lt;/div&gt;
+              &lt;div data-aos="flip-left"&gt;Flip-Left&lt;/div&gt;
+              &lt;div data-aos="flip-right"&gt;Flip-right&lt;/div&gt;
+              &lt;div data-aos="slide-up"&gt;Slide-Up&lt;/div&gt;
+              &lt;div data-aos="slide-down"&gt;Slide-Down&lt;/div&gt;
+              &lt;div data-aos="slide-left"&gt;Slide-Left&lt;/div&gt;
+              &lt;div data-aos="slide-right"&gt;Slide-Right&lt;/div&gt;</code>
+          </pre>
+        </div>
+        
+        <div>
+          <h1 style="text-align: center; border-bottom: solid;">效果展示</h1>
+        </div>
+
+        <div class="container mt-3" data-aos="fade-up" style="height: 100px; width:800px; border: solid 7px blue; text-align: center; font-size: 50px;">Fade-Up</div>
+        <div class="container mt-3" data-aos="fade-down" style="height: 100px; width:500px; border: solid 7px rgb(255, 0, 0); text-align: center; font-size: 50px;">Fade-Down</div>
+        <div class="container mt-3" data-aos="fade-left" style="height: 100px; width:800px; border: solid 7px rgb(20, 188, 57); text-align: center; font-size: 50px;">Fade-Left</div>
+        <div class="container mt-3" data-aos="fade-right" style="height: 100px; width:500px; border: solid 7px rgb(239, 232, 15); text-align: center; font-size: 50px;">Fade-Right</div>
+        <div class="container mt-3" data-aos="zoom-in" style="height: 100px; width:800px; border: solid 7px rgb(255, 0, 247); text-align: center; font-size: 50px;">Zoom-In</div>
+        <div class="container mt-3" data-aos="zoom-out" style="height: 100px; width:500px; border: solid 7px rgb(193, 9, 166); text-align: center; font-size: 50px;">Zoom-out</div>
+        <div class="container mt-3" data-aos="flip-left" style="height: 100px; width:800px; border: solid 7px rgb(14, 229, 237); text-align: center; font-size: 50px;">Flip-Left</div>
+        <div class="container mt-3" data-aos="flip-right" style="height: 100px; width:500px; border: solid 7px rgb(0, 0, 0); text-align: center; font-size: 50px;">Flip-right</div>
+        <div class="container mt-3" data-aos="slide-up" style="height: 100px; width:800px; border: solid 7px rgb(126, 118, 118); text-align: center; font-size: 50px;">Slide-Up</div>
+        <div class="container mt-3" data-aos="slide-down" style="height: 100px; width:500px; border: solid 7px rgb(198, 117, 117); text-align: center; font-size: 50px;">Slide-Down</div>
+        <div class="container mt-3" data-aos="slide-left" style="height: 100px; width:800px; border: solid 7px rgb(138, 220, 144); text-align: center; font-size: 50px;">Slide-Left</div>
+        <div class="container mt-3" data-aos="slide-right" style="height: 100px; width:500px; border: solid 7px rgb(235, 101, 43); text-align: center; font-size: 50px;">Slide-Right</div>
+        <p></p>
+    </div>
+    
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

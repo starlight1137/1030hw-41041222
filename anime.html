@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Typed.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .circle {
+          width: 75px;
+          height: 75px;
+          background-color: green;
+          border-radius: 50%;
+          }
+        .container1 {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">JS套件說明</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="aos.html">AOS動畫</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="tts.html">文字轉語音</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="lottie.html">Lottie動畫</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="chartjs.html">chart.js動畫</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="lazyload.html">圖片惰性加載</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="typed.html">Typed.js動畫</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="anime.html">Anime.js動畫</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="moment.html">Moment.js動態時間</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="leaflet.html">leaflet.js地圖</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="jquery.html">JQuery UI</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <h2>Anime.js</h2>
+        <a>簡單、好用，卻全面的JS動畫庫</a><br>
+        <a href="https://github.com/juliangarnier/anime">Anime.js官方Github</a>
+        <p></p>
+
+        <h2>在&lt;head&gt;中引入script：</h2>
+            <pre style="font-size: large; background-color:blanchedalmond"> <code>
+        &lt;script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"&gt;&lt;/script&gt;</code>
+        </pre>
+
+        <h2>範例程式碼:</h2>
+        <div style="font-size: large;">
+            <pre style="background-color:blanchedalmond">
+                <code>
+                    //先建立一個div，並賦予圖案名稱
+                    &lt;div class="circle"&gt;&lt;/div&gt;
+                    //於script中設定各項動畫特效
+                    var animation=anime({
+                        targets: '.circle',               //圖案名稱
+                        translateX: 300,                  //圖案移動距離
+                        direction: 'alternate',           //讓動畫往返移動
+                        loop: true,                       //是否無限循環播放
+                        });
+                    //繪製圖案樣式
+                    .circle {
+                        width: 75px;
+                        height: 75px;
+                        background-color: green;
+                        border-radius: 50%;
+                        }
+            </pre>
+        </div>
+
+        <div>
+            <h2>效果展示</h2>
+        </div>
+        <p></p>
+
+        <div class="container1">
+            <div class="circle"></div>
+            <p></p>
+            <div class="box"></div>
+        </div>
+
+    </div>
+    
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        var animation=anime({
+          targets: '.circle',
+          translateX: 500,                  //移動距離
+          direction: 'alternate',           // 讓動畫往返移動
+          loop: true,                       // 設定為無限循環
+          });
+        var animation=anime({
+          targets: '.box',
+          translateX: 800,
+          direction: 'alternate',           // 讓動畫往返移動
+          loop: true,                       // 設定為無限循環
+          easing: 'easeInOutSine',          // 平滑的加速與減速效果
+          duration: 2000                    // 每次動畫持續時間
+          });
+    </script>
+  </body>
+</html>
